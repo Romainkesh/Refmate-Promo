@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RefMate — Le Copilote de Recherche et de Rédaction Académique</title>
+  <meta name="description" content="Créez des références APA 7 & Vancouver irréprochables, rédigez vos citations avec un assistant intelligent, dialoguez avec vos PDF grâce à l'IA. 100% cloud, zéro installation." />
+  <meta property="og:title" content="RefMate — Le Copilote de Recherche et de Rédaction Académique" />
+  <meta property="og:description" content="Normes APA 7 & Vancouver parfaites, lecteur PDF assisté par IA, assistant de citation et export Word. L'outil qui manquait aux chercheurs francophones." />
+  <meta property="og:url" content="https://getrefmate.online/" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://getrefmate.online/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+        RefMate
+      </a>
+      <div class="nav-links">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#modules">Modules</a>
+        <a href="#zotero-vs">Limites actuelles</a>
+        <a href="#comparison">Comparatif</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://getrefmate.online/" target="_blank" rel="noopener" class="nav-cta">Essayer gratuitement →</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#features">Fonctionnalités</a>
+      <a href="#modules">Modules</a>
+      <a href="#zotero-vs">Limites actuelles</a>
+      <a href="#comparison">Comparatif</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://getrefmate.online/" target="_blank" rel="noopener" class="nav-cta-mobile">Essayer gratuitement →</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge animate-on-scroll">
+        <span class="badge-dot"></span>
+        Normes officielles APA 7<sup>e</sup> édition &amp; Vancouver (ICMJE / NLM)
+      </div>
+      <h1 class="hero-title animate-on-scroll">
+        Le copilote de recherche<br/>
+        et de <span class="gradient-text">rédaction académique</span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll">
+        Références conformes. Citations parfaitement intégrées. PDF analysés par l'IA.<br class="hide-mobile" />
+        Tout ce qu'il manquait aux étudiants, doctorants et chercheurs francophones — dans un seul outil 100&nbsp;% cloud.
+      </p>
+      <div class="hero-actions animate-on-scroll">
+        <a href="https://getrefmate.online/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Commencer gratuitement
+        </a>
+        <a href="#modules" class="btn btn-ghost btn-lg">Découvrir les modules ↓</a>
+      </div>
+      <div class="hero-stats animate-on-scroll">
+        <div class="stat">
+          <span class="stat-number">16</span>
+          <span class="stat-label">Modules intégrés</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Normes supportées</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Installation requise</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PAIN POINTS ═══════════════════════ -->
+  <section id="pain" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Le constat</span>
+        <h2>Les étudiants perdent des heures<br/> et des <span class="gradient-text">points</span> inutilement</h2>
+        <p class="section-desc">
+          Majuscules mal placées, esperluettes anglophones, citations mal intégrées, PDF illisibles…<br/>
+          La bibliographie est la première source d'erreurs évitables dans les travaux universitaires.
+        </p>
+      </div>
+      <div class="pain-grid animate-on-scroll">
+        <div class="pain-card">
+          <div class="pain-icon pain-icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h3>Des normes calquées sur l'anglais</h3>
+          <p>Formatages erronés en français : majuscules forcées sur chaque mot, esperluettes « &amp; » inadaptées, auteurs collectifs tronqués en nom/prénom.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon pain-icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h3>Des listes passives sans aide à la rédaction</h3>
+          <p>Aucune assistance pour insérer correctement un <code>[sic]</code>, une coupure <code>[...]</code>, une mention « cité dans » ou un verbe introductif dans votre texte.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon pain-icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h3>Des lectures de PDF figées</h3>
+          <p>Recopie manuelle des passages, recherche fastidieuse des numéros de page, aucune compréhension du contenu.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon pain-icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h3>Des installations complexes</h3>
+          <p>Logiciels lourds, plugins parfois instables, connecteurs navigateurs et synchronisations locales souvent capricieuses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SOLUTION HERO ═══════════════════════ -->
+  <section id="solution" class="section section-dark">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag section-tag-light">La solution</span>
+        <h2 class="text-white">RefMate a été conçu pour résoudre<br/>chacun de ces problèmes</h2>
+        <p class="section-desc text-white-muted">
+          Plus qu'un simple générateur, RefMate est un <strong>studio de recherche complet</strong> : il vous accompagne de la découverte de vos sources jusqu'à l'insertion rigoureuse de vos citations dans votre texte final.
+        </p>
+      </div>
+      <div class="solution-cards animate-on-scroll">
+        <div class="sol-card">
+          <div class="sol-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Précision chirurgicale</h3>
+          <p>Normes APA 7<sup>e</sup> (FR/EN) &amp; Vancouver conformes à la lettre, avec gestion des auteurs institutionnels, e-locators et casse française.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Copilote de rédaction</h3>
+          <p>Assistant de citation qui formule vos phrases d'insertion avec <code>[sic]</code>, <code>[...]</code>, verbes académiques et mise en bloc automatique.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>PDF intelligent</h3>
+          <p>Dialoguez avec vos articles, extrayez des citations avec le numéro de page exact et vérifiez la fiabilité scientifique des revues.</p>
+        </div>
+        <div class="sol-card">
+          <div class="sol-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>100 % Cloud</h3>
+          <p>Aucune installation. Accessible sur tous vos appareils avec export Word (.docx) impeccable et sauvegarde sécurisée.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FEATURES GRID ═══════════════════════ -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Vue d'ensemble</span>
+        <h2>Tout ce dont vous avez besoin,<br/>dans un <span class="gradient-text">seul outil</span></h2>
+      </div>
+      <div class="features-grid animate-on-scroll">
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-indigo">📚</div>
+          <h3>APA 7 &amp; Vancouver</h3>
+          <p>Basculez entre les normes en un clic. Français et anglais.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-violet">✍️</div>
+          <h3>Assistant de citation</h3>
+          <p>Citations narratives et parenthétiques avec protocole universitaire.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-emerald">🤖</div>
+          <h3>Chat PDF &amp; IA</h3>
+          <p>Posez des questions à vos articles et extrayez les citations en un clic.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-amber">📝</div>
+          <h3>Carnet de rédaction</h3>
+          <p>Éditeur intégré avec insertion dynamique et export Word.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-rose">🔄</div>
+          <h3>Paraphrase académique</h3>
+          <p>Reformulez vos extraits avec un vocabulaire universitaire rigoureux.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-cyan">🔍</div>
+          <h3>Veille scientifique</h3>
+          <p>Recherche PubMed &amp; CrossRef directement depuis votre espace.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-orange">🛡️</div>
+          <h3>Fiabilité &amp; DOAJ</h3>
+          <p>Vérification de l'indexation et score de fiabilité de chaque revue.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-teal">⚡</div>
+          <h3>Import instantané</h3>
+          <p>DOI, PMID, URL ou fichier BibTeX en moins d'une seconde.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-purple">🧹</div>
+          <h3>Garde-fou IA</h3>
+          <p>Détection automatique des erreurs et corrections de la casse française.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ DETAILED MODULES ═══════════════════════ -->
+  <section id="modules" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">En détail</span>
+        <h2>Chaque module, pensé pour<br/>votre <span class="gradient-text">réussite académique</span></h2>
+        <p class="section-desc">
+          RefMate intègre 16 fonctionnalités spécialisées pour couvrir l'ensemble de votre flux de recherche — de la découverte de vos sources jusqu'à l'exportation de votre document final.
+        </p>
+      </div>
+
+      <div class="modules-list">
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">01</div>
+          <div class="module-content">
+            <h3>Le Générateur &amp; Bibliothèque de Références</h3>
+            <p class="module-tagline">APA 7<sup>e</sup> édition (FR/EN) &amp; Vancouver (ICMJE/NLM)</p>
+            <p>Fini le casse-tête des virgules, des italiques et des majuscules mal placées. Entrez simplement un DOI, un PMID ou un lien : RefMate extrait instantanément les métadonnées et génère une référence conforme et précise aux normes APA 7<sup>e</sup> édition (sciences humaines, psycho, droit) ou Vancouver (santé, médecine). Vos sources sont stockées dans un espace sécurisé, filtrables par tags et prêtes à être exportées.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">02</div>
+          <div class="module-content">
+            <h3>L'Assistant de Citation &amp; d'Insertion Académique</h3>
+            <p class="module-tagline">Insertion narrative, parenthétique &amp; protocole universitaire complet</p>
+            <p>Ne vous demandez plus comment intégrer correctement un extrait dans votre texte. RefMate formule pour vous vos citations narratives ou parenthétiques selon les règles de l'art universitaire. Il gère automatiquement les cas complexes : insertion de <code>[sic]</code> après une coquille d'origine, coupures de texte <code>[...]</code>, mentions <em>« cité dans »</em>, traductions libres et suggestions de verbes introductifs académiques pour fluidifier vos paragraphes.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">03</div>
+          <div class="module-content">
+            <h3>Le Lecteur PDF Augmenté par l'Intelligence Artificielle</h3>
+            <p class="module-tagline">Chat PDF, captures HD, traduction, explication &amp; détection automatique de page</p>
+            <p>Ne perdez plus votre temps à chercher dans quel paragraphe se trouvait une idée. Notre lecteur interactif analyse vos articles en direct : dialoguez avec le document (<em>Chat PDF</em>) pour en extraire la substantifique moelle, et surlignez n'importe quel passage pour générer la citation avec son numéro de page exact calculé automatiquement en un clic. Besoin de récupérer un schéma ou une figure protégée ? Réalisez des <strong>captures d'images en haute qualité</strong> directement depuis le PDF, même pour les contenus non téléchargeables. Un passage vous résiste en anglais ? L'IA intégrée vous propose une <strong>traduction fluide</strong> et une <strong>explication vulgarisée</strong> du paragraphe pour que rien ne vous échappe.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">04</div>
+          <div class="module-content">
+            <h3>Le Carnet de Rédaction &amp; Export Word (.docx)</h3>
+            <p class="module-tagline">Éditeur intégré avec bibliographie dynamique</p>
+            <p>Écrivez votre mémoire ou votre article sans jamais quitter votre bibliothèque des yeux. Notre éditeur de texte intégré vous permet de rédiger en insérant vos références de façon dynamique au fil de votre réflexion. Au fur et à mesure que vous écrivez, votre bibliographie finale se construit automatiquement en bas de page, prête à être exportée au format Microsoft Word (<code>.docx</code>) avec une mise en page parfaite.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">05</div>
+          <div class="module-content">
+            <h3>Le Calibreur Intelligent de Citations</h3>
+            <p class="module-tagline">Courtes (entre guillemets) vs longues (bloc détaché ≥ 40 mots)</p>
+            <p>Ne doutez plus jamais de la mise en page de vos extraits textuels. Selon les normes académiques (notamment la règle stricte des 40 mots en APA), une citation ne se met pas en forme de la même manière selon sa longueur. RefMate calibre instantanément votre extrait : pour une <strong>citation courte</strong>, il l'intègre harmonieusement dans votre paragraphe entre guillemets ; pour une <strong>citation longue (≥ 40 mots)</strong>, il génère automatiquement un bloc détaché avec retrait d'alinéa réglementaire et sans guillemets, prêt pour Microsoft Word.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">06</div>
+          <div class="module-content">
+            <h3>Le Mode d'Articulation de Citation</h3>
+            <p class="module-tagline">Intégration fluide ou amorce avec deux-points</p>
+            <p>Évitez la monotonie dans vos phrases d'annonce et vos transitions de texte. RefMate vous permet de choisir d'un clic comment articuler votre citation : soit en <strong>mode fluide intégré</strong> (<em>« Selon l'auteur, [...] »</em> avec verbe de citation adapté), soit en <strong>mode d'amorce complète avec deux-points</strong> (<em>« Les conclusions du rapport mettent en lumière cette dynamique : [...] »</em>). Vos paragraphes gagnent en élégance stylistique tout en respectant une rigueur méthodologique absolue.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">07</div>
+          <div class="module-content">
+            <h3>L'Outil de Paraphrase Académique</h3>
+            <p class="module-tagline">Reformulation intelligente &amp; vocabulaire universitaire</p>
+            <p>Évitez le piège du plagiat tout en conservant la rigueur scientifique de vos sources. Le paraphraseur intelligent de RefMate reformule vos extraits de recherche avec un vocabulaire universitaire adapté et un ton rigoureux. Vous gagnez en fluidité rédactionnelle sans jamais dénaturer le sens original des concepts théoriques.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">08</div>
+          <div class="module-content">
+            <h3>La Veille Scientifique Intégrée</h3>
+            <p class="module-tagline">Moteur PubMed &amp; CrossRef sans quitter RefMate</p>
+            <p>Plus besoin de multiplier les onglets pour explorer l'état de l'art de votre discipline. Recherchez des publications récentes directement depuis RefMate grâce à notre moteur connecté aux bases mondiales (PubMed, CrossRef). Filtrez les résultats, lisez les résumés et ajoutez les articles pertinents à vos références d'un simple clic.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">09</div>
+          <div class="module-content">
+            <h3>Le Vérificateur de Fiabilité &amp; Score DOAJ</h3>
+            <p class="module-tagline">Protection contre les revues prédatrices</p>
+            <p>Protégez la crédibilité de vos travaux contre les revues prédatrices et les sources douteuses. RefMate évalue la fiabilité de vos sources en vérifiant leur indexation scientifique, leur présence dans le répertoire officiel DOAJ (<em>Directory of Open Access Journals</em>) et la validité de leurs identifiants académiques. Vous citez en toute sérénité.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">10</div>
+          <div class="module-content">
+            <h3>L'Éditeur Interactif de Titre</h3>
+            <p class="module-tagline">Casse intelligente &amp; italiques au mot près</p>
+            <p>Ne réécrivez plus tout un titre juste pour corriger une majuscule ou un terme scientifique. Grâce à notre champ de titre interactif, un simple clic sur un mot fait défiler sa casse (<em>minuscule → Majuscule → TOUT EN MAJUSCULES</em>). Vous pouvez également passer en italique des mots précis (titres d'œuvres internes, locutions latines) ou activer la détection automatique de la taxonomie biologique (<em>Homo sapiens</em>, <em>Escherichia coli</em>) en un éclair.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">11</div>
+          <div class="module-content">
+            <h3>L'Éditeur Intelligent d'Auteurs &amp; Entités Collectives</h3>
+            <p class="module-tagline">Séparation, formatage et mode « auteur collectif »</p>
+            <p>Fini la galère des listes d'auteurs interminables et des institutions découpées de travers. Collez une chaîne brute de 10 auteurs : RefMate sépare automatiquement chaque individu, place le nom de famille en tête et formate les initiales. Pour les ministères, l'OMS ou l'INSEE, activez le mode <em>« Auteur collectif »</em> en un clic pour empêcher que votre institution ne soit tronquée en prénom/nom.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">12</div>
+          <div class="module-content">
+            <h3>L'Aperçu Dynamique Multi-Normes &amp; Suffixes Automatiques</h3>
+            <p class="module-tagline">Prévisualisation (a, b, c) et rendu en temps réel</p>
+            <p>Visualisez instantanément le rendu final de votre référence avant même de l'enregistrer. Basculez en direct entre APA (FR), APA (EN) et Vancouver pour voir comment votre référence et vos citations s'adaptent. Si vous citez plusieurs publications du même auteur parues la même année, RefMate calcule et attribue automatiquement les suffixes de désambiguïsation (<em>2024a, 2024b</em>).</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">13</div>
+          <div class="module-content">
+            <h3>Le Lecteur &amp; Nettoyeur d'Articles Web</h3>
+            <p class="module-tagline">Mode lecture épurée, traduction, explication &amp; citation de pages web</p>
+            <p>Citez des articles en ligne sans vous noyer sous les publicités et les menus parasites. Le lecteur web de RefMate aspire le contenu textuel brut de n'importe quelle page web ou article de presse, supprime le bruit visuel et vous permet de surligner les passages clés pour générer immédiatement la citation formatée avec l'URL et la date de consultation exacte. Vous butez sur un paragraphe en anglais ou un concept technique ? L'IA vous propose une <strong>traduction instantanée</strong> et une <strong>explication claire et accessible</strong> du passage, directement dans le lecteur.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">14</div>
+          <div class="module-content">
+            <h3>L'Optimiseur &amp; Garde-Fou IA</h3>
+            <p class="module-tagline">Relecteur invisible qui traque les incohérences</p>
+            <p>Un relecteur expert invisible qui traque les incohérences avant vos examinateurs. Notre garde-fou intelligent passe au crible chaque référence pour détecter les champs manquants, corriger la casse des titres français et rétablir les auteurs institutionnels (ministères, agences de santé). Vos bibliographies sont conformes au millimètre.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">15</div>
+          <div class="module-content">
+            <h3>L'Import Universel par Identifiants</h3>
+            <p class="module-tagline">DOI, PMID, URL &amp; fichiers de bibliothèque</p>
+            <p>Ne perdez plus 10 minutes à remplir manuellement la date, le volume ou le numéro d'un article. Collez simplement un identifiant DOI, un numéro PubMed (PMID), une URL ou importez un fichier de bibliothèque : RefMate interroge les serveurs académiques mondiaux pour remplir l'intégralité des champs métadonnées avec une exactitude absolue en moins d'une seconde.</p>
+          </div>
+        </div>
+
+        <div class="module-card animate-on-scroll">
+          <div class="module-number">16</div>
+          <div class="module-content">
+            <h3>Le Gestionnaire d'Étiquettes &amp; Filtres Thématiques</h3>
+            <p class="module-tagline">Organisation par chapitres, thèmes et méthodologies</p>
+            <p>Retrouvez n'importe quelle source en 2 secondes, même avec des centaines de références. Classez vos documents par chapitres de mémoire, thématiques de recherche ou méthodologies grâce à un système d'étiquettes colorées. Filtrez instantanément votre bibliothèque pour n'exporter que la bibliographie spécifique à un chapitre donné.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ COMPARISON ═══════════════════════ -->
+  <section id="comparison" class="section section-dark">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag section-tag-light">Comparaison</span>
+        <h2 class="text-white">Sans RefMate vs avec <span class="gradient-text">RefMate</span></h2>
+      </div>
+      <div class="comparison-table animate-on-scroll">
+        <div class="comp-row comp-header">
+          <div class="comp-cell">Situation</div>
+          <div class="comp-cell comp-before">Avant</div>
+          <div class="comp-cell comp-after">Avec RefMate</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell comp-label">Normes francophones</div>
+          <div class="comp-cell comp-before">
+            <span class="comp-badge comp-badge-red">❌</span>
+            Formatages calqués sur l'anglais, majuscules forcées, esperluettes « &amp; »
+          </div>
+          <div class="comp-cell comp-after">
+            <span class="comp-badge comp-badge-green">✅</span>
+            Respect strict des conventions typographiques françaises APA 7 &amp; Vancouver
+          </div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell comp-label">Insertion des citations</div>
+          <div class="comp-cell comp-before">
+            <span class="comp-badge comp-badge-red">❌</span>
+            Aucune aide : vous copiez le texte et devinez comment l'intégrer
+          </div>
+          <div class="comp-cell comp-after">
+            <span class="comp-badge comp-badge-green">✅</span>
+            Formulation automatique avec [sic], [...], verbes introductifs et mise en bloc
+          </div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell comp-label">Lecture de PDF</div>
+          <div class="comp-cell comp-before">
+            <span class="comp-badge comp-badge-red">❌</span>
+            Lecteur statique, numéros de page à chercher manuellement
+          </div>
+          <div class="comp-cell comp-after">
+            <span class="comp-badge comp-badge-green">✅</span>
+            IA intégrée : Chat PDF, extraction avec page exacte, score de fiabilité
+          </div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell comp-label">Accessibilité</div>
+          <div class="comp-cell comp-before">
+            <span class="comp-badge comp-badge-red">❌</span>
+            Logiciel lourd, plugins instables, synchronisation locale
+          </div>
+          <div class="comp-cell comp-after">
+            <span class="comp-badge comp-badge-green">✅</span>
+            100 % Cloud, zéro installation, export Word impeccable
+          </div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell comp-label">Citations courtes/longues</div>
+          <div class="comp-cell comp-before">
+            <span class="comp-badge comp-badge-red">❌</span>
+            Mise en page manuelle : vous devez compter les mots et formater vous-même
+          </div>
+          <div class="comp-cell comp-after">
+            <span class="comp-badge comp-badge-green">✅</span>
+            Calibrage automatique : guillemets ou bloc détaché selon la règle des 40 mots
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ OUTILS CLASSIQUES VS REFMATE ═══════════════════════ -->
+  <section id="zotero-vs" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Analyse détaillée</span>
+        <h2>Erreurs fréquentes des logiciels classiques<br/>que <span class="gradient-text">RefMate corrige</span></h2>
+        <p class="section-desc">
+          Les générateurs bibliographiques actuels sont populaires, mais ils génèrent de nombreuses erreurs de formatage qui passent souvent inaperçues — jusqu'à ce que votre directeur de mémoire ou vos relecteurs les repèrent. Voici un audit factuel, norme par norme.
+        </p>
+      </div>
+
+      <!-- ── APA 7 ── -->
+      <div class="zotero-norm-block animate-on-scroll">
+        <div class="norm-header">
+          <span class="norm-badge norm-badge-apa">APA 7<sup>e</sup> édition</span>
+          <p>Erreurs documentées dans les exports d'outils standards en norme APA</p>
+        </div>
+
+        <div class="zotero-grid">
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Ne respectent pas la <em>sentence case</em></h4>
+              <p>La norme APA 7 exige la <em>sentence case</em> pour les titres (seul le premier mot et les noms propres en majuscule). Les outils classiques conservent souvent la casse d'origine ou appliquent un <em>Title Case</em> anglophone inadapté.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Convertit automatiquement en <em>sentence case</em> tout en préservant les noms propres, acronymes et termes scientifiques grâce à un garde-fou IA.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Espace avant les deux-points</h4>
+              <p>Les générateurs insèrent parfois un espace avant le deux-points dans les références (ex. <code>Titre : sous-titre</code>), ce qui est contraire à la norme APA qui interdit cet espace en anglais.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Applique la règle typographique correcte selon la langue : aucun espace avant les deux-points en anglais, espace fine en français.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Tiret de 6 au lieu du tiret cadratin</h4>
+              <p>Pour les plages de pages, la norme APA exige un tiret cadratin (—) dans certains contextes. Les logiciels standards utilisent souvent un tiret de 6 (–) ou un trait d'union simple (-) à la place.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Utilise le bon type de tiret selon le contexte normé : tiret cadratin pour les intervalles et les substitutions d'auteurs répétés.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Noms de genre et d'espèce non italicisés</h4>
+              <p>La nomenclature taxonomique (<em>Homo sapiens</em>, <em>Escherichia coli</em>) doit être en italique dans les titres. Ces outils ne détectent pas ces termes et les laissent en romain.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Détection automatique de la taxonomie biologique et mise en italique instantanée, plus un éditeur interactif pour affiner au mot près.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Mauvais formatage des articles non anglophones</h4>
+              <p>La norme APA exige d'ajouter une traduction entre crochets après le titre original pour les articles écrits dans d'autres langues que l'anglais. Les logiciels omettent souvent le titre en langue originale, ne laissant que le titre traduit en anglais (ou une traduction partielle).</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Préserve et affiche correctement le titre original, suivi de sa traduction entre crochets, conformément aux conventions APA internationales.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Sites et pages web mal référencés</h4>
+              <p>Les générateurs formatent souvent les pages web comme des articles classiques, utilisent le titre de la page à la place de l'auteur, ou omettent la date de consultation. La vraie norme APA pour les sources en ligne n'est pas respectée.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Formatage strict des sources web avec auteur distinct du titre, date de consultation, URL propre et distinction entre page web et article en ligne.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Thèses, mémoires et rapports mal formatés</h4>
+              <p>L'extraction des données de documents PDF (thèses, mémoires, rapports institutionnels) est souvent incomplète ou incorrecte. Le type de document n'est pas identifié selon la norme APA 7<sup>e</sup> édition.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Types de documents dédiés (thèse de doctorat, mémoire de master, rapport) avec les champs spécifiques à chaque catégorie et le formatage conforme à l'APA 7.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Erreurs typographiques : mots collés, espaces manquantes</h4>
+              <p>Des cas documentés montrent des noms collés sans espace (ex. <code>andGyrodactylus</code>) ou des données mal découpées dans les exports automatiques.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Nettoyage automatique des métadonnées à l'import : détection des mots collés, correction des espaces et normalisation des caractères spéciaux.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Plage de pages tronquée ou page unique erronée</h4>
+              <p>Ces outils n'affichent parfois qu'une seule page au lieu de la plage complète (ex. <code>p. 45</code> au lieu de <code>p. 45–52</code>), ce qui rend la référence incomplète.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Extraction de la plage de pages complète depuis les bases CrossRef et PubMed, avec vérification de cohérence automatique.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Inversion nom/prénom des auteurs</h4>
+              <p>Cas documenté sur des articles comme <em>« Myxobolus polyinfection patterns in Oreochromis niloticus in Adamawa-Cameroon »</em> : les logiciels inversent parfois le nom de famille et les initiales du prénom.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Vérification croisée nom/prénom depuis les métadonnées CrossRef/PubMed et formatage garanti <code>Nom, I.</code> avec alertes en cas d'ambiguïté.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Champ « Article » mal placé ou absent</h4>
+              <p>Les générateurs omettent souvent la mention <code>Article</code> + numéro d'article (e-locator) là où la norme APA 7 l'exige, ou la placent au mauvais endroit dans la référence.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Gestion rigoureuse des e-locators : insertion automatique de <code>Article eXXXX</code> au bon emplacement lorsqu'il n'y a pas de pagination classique.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Gestion incorrecte des suppléments</h4>
+              <p>La norme APA standard exige l'abréviation <code>Suppl. 1</code> avec un point abréviatif pour les suppléments. Les logiciels écrivent souvent <code>Suppl 1</code> (sans point) ou <code>Supplement 1</code> (non abrégé).</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Formatage normalisé des suppléments : <code>Suppl. 1</code> avec le point abréviatif, comme exigé par le manuel de publication APA.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Vancouver ── -->
+      <div class="zotero-norm-block animate-on-scroll">
+        <div class="norm-header">
+          <span class="norm-badge norm-badge-vanc">Vancouver (ICMJE / NLM)</span>
+          <p>Erreurs documentées dans les exports d'outils standards en norme Vancouver</p>
+        </div>
+
+        <div class="zotero-grid">
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Casse des titres non respectée</h4>
+              <p>La norme Vancouver exige la <em>sentence case</em> stricte pour les titres d'articles. Les logiciels conservent fréquemment la casse d'origine importée depuis les bases de données.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Application automatique de la <em>sentence case</em> Vancouver avec protection des noms propres, acronymes et noms d'espèces.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Auteurs collectifs ignorés après « et al. »</h4>
+              <p>La norme Vancouver exige de mentionner l'auteur collectif officiel après <code>et al.</code>, séparé par un point-virgule (ex. <em>« Knowler WC, et al.; Diabetes Prevention Program Research Group »</em>). Les générateurs omettent parfois cette mention dans des cas testés.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Champ « Groupe / auteur collectif » dédié, automatiquement inséré après <code>et al.</code> avec le séparateur point-virgule conforme à la norme Vancouver.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Numéro d'article dupliqué</h4>
+              <p>Ces outils répètent parfois le même numéro d'article dans la référence (ex. <code>e12345. e12345</code>) en raison d'un mauvais nettoyage des métadonnées importées.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Déduplication automatique des métadonnées : détection et suppression des doublons de numéro d'article, de volume ou de fascicule.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Métadonnées non nettoyées</h4>
+              <p>Les données importées contiennent souvent du bruit : balises HTML résiduelles, caractères spéciaux mal encodés, sauts de ligne parasites dans les titres.</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Pipeline de nettoyage systématique à l'import : suppression des balises, normalisation Unicode, correction des espaces et des caractères spéciaux.</p>
+            </div>
+          </div>
+
+          <div class="zotero-card">
+            <div class="zotero-error">
+              <span class="z-tag z-tag-red">Outils classiques</span>
+              <h4>Nom de revue tronqué ou incomplet</h4>
+              <p>Cas documenté : pour certains articles, ces logiciels omettent une partie du nom complet de la revue (ex. titre abrégé au lieu du titre officiel NLM, ou inversement).</p>
+            </div>
+            <div class="refmate-fix">
+              <span class="z-tag z-tag-green">RefMate</span>
+              <p>Vérification croisée du nom de la revue via les métadonnées CrossRef et PubMed. Utilisation systématique de l'abréviation NLM officielle en norme Vancouver.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="zotero-cta animate-on-scroll">
+        <p>Ces erreurs sont subtiles mais peuvent coûter des points précieux lors de l'évaluation de vos travaux.</p>
+        <a href="https://getrefmate.online/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Passer à RefMate →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOR WHO ═══════════════════════ -->
+  <section id="audience" class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Pour qui ?</span>
+        <h2>Conçu pour les exigences de<br/>chaque <span class="gradient-text">discipline</span></h2>
+      </div>
+      <div class="audience-grid animate-on-scroll">
+        <div class="audience-card">
+          <div class="audience-emoji">🧠</div>
+          <h3>Psychologie &amp; Sciences humaines</h3>
+          <p>Norme APA 7<sup>e</sup> rigoureuse exigée par les facultés. RefMate applique les conventions francophones à la lettre.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-emoji">⚕️</div>
+          <h3>Médecine &amp; Sciences de la santé</h3>
+          <p>Norme Vancouver (ICMJE/NLM) avec recherche PubMed intégrée et import PMID instantané.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-emoji">⚖️</div>
+          <h3>Droit &amp; Sciences politiques</h3>
+          <p>Gestion des sources institutionnelles, rapports ministériels et documents de jurisprudence.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-emoji">🎓</div>
+          <h3>Sciences de l'éducation</h3>
+          <p>Citations de seconde main (<em>cité dans</em>), auteurs collectifs et manuels pédagogiques.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-emoji">🧬</div>
+          <h3>Biologie &amp; Pharmacie</h3>
+          <p>Détection automatique des noms taxonomiques en italique et import DOI depuis CrossRef.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-emoji">📊</div>
+          <h3>Sociologie &amp; Économie</h3>
+          <p>Gestion des datasets, rapports d'organisations internationales et publications en ligne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FAQ ═══════════════════════ -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Questions fréquentes</span>
+        <h2>Tout savoir sur <span class="gradient-text">RefMate</span></h2>
+      </div>
+      <div class="faq-list animate-on-scroll">
+        <details class="faq-item">
+          <summary>RefMate est-il gratuit ?</summary>
+          <p>Oui ! RefMate est accessible gratuitement. Vous pouvez créer un compte, sauvegarder vos références dans le cloud et utiliser l'ensemble des fonctionnalités de génération et d'export sans frais.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Puis-je importer mes références existantes ?</summary>
+          <p>Absolument. RefMate accepte l'import par DOI, PMID, URL ou fichier de bibliothèque. Vous pouvez transférer vos sources existantes en quelques secondes sans les ressaisir à la main.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quelles normes bibliographiques sont supportées ?</summary>
+          <p>RefMate supporte les normes <strong>APA 7<sup>e</sup> édition</strong> (en français et en anglais) ainsi que la norme <strong>Vancouver</strong> (ICMJE/NLM) utilisée en sciences de la santé et médecine.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment fonctionne le Chat PDF avec l'IA ?</summary>
+          <p>Importez n'importe quel article au format PDF dans RefMate. Notre lecteur intelligent analyse le contenu du document et vous permet de poser des questions en langage naturel. Vous pouvez également surligner un passage pour générer automatiquement la citation formatée avec le numéro de page exact.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Dois-je installer un logiciel ?</summary>
+          <p>Non. RefMate est 100 % cloud et fonctionne directement dans votre navigateur (Chrome, Edge, Brave, Firefox, Safari). Vos données sont synchronisées automatiquement sur tous vos appareils.</p>
+        </details>
+        <details class="faq-item">
+          <summary>RefMate gère-t-il les citations longues (blocs) ?</summary>
+          <p>Oui. RefMate applique automatiquement la règle des 40 mots : les citations courtes sont intégrées entre guillemets dans le paragraphe, tandis que les citations longues sont formatées en bloc détaché avec retrait d'alinéa, conformément aux normes APA.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment exporter mon travail ?</summary>
+          <p>RefMate propose l'export en <strong>Microsoft Word (.docx)</strong>, en texte brut (.txt) et en JSON. Votre bibliographie et vos citations sont parfaitement mises en page et prêtes pour le rendu final.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FINAL CTA ═══════════════════════ -->
+  <section id="cta" class="section section-cta">
+    <div class="cta-glow"></div>
+    <div class="container cta-content animate-on-scroll">
+      <h2>Prêt à transformer votre manière<br/>de citer et de rédiger ?</h2>
+      <p>Rejoignez les étudiants et chercheurs qui ont choisi la précision et l'efficacité.<br/>Aucune carte bancaire requise. Aucune installation.</p>
+      <a href="https://getrefmate.online/" target="_blank" rel="noopener" class="btn btn-primary btn-xl">
+        Essayer RefMate gratuitement →
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 2 10 10 13 7 16 10 16 2"/></svg>
+          RefMate
+        </div>
+        <p>Le copilote de recherche et de rédaction académique.<br/>Normes APA 7 &amp; Vancouver parfaites, 100 % cloud.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produit</h4>
+          <a href="#features">Fonctionnalités</a>
+          <a href="#modules">Modules</a>
+          <a href="#comparison">Comparatif</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Normes</h4>
+          <a href="https://getrefmate.online/guide/normes-apa" target="_blank" rel="noopener">Guide APA 7</a>
+          <a href="https://getrefmate.online/guide/normes-vancouver" target="_blank" rel="noopener">Guide Vancouver</a>
+        </div>
+        <div class="footer-col">
+          <h4>Accès</h4>
+          <a href="https://getrefmate.online/" target="_blank" rel="noopener">Lancer RefMate</a>
+          <a href="https://getrefmate.online/login" target="_blank" rel="noopener">Se connecter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024–2026 RefMate. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
